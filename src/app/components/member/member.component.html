@@ -1,0 +1,11 @@
+<ng-container *ngIf="data">
+  <nz-avatar
+    class="fl thumbnail"
+    style="background-color:{{ data.name | stringToColor }}"
+    [nzSrc]="data?.thumbnail"
+    [nzText]="data?.name"
+    nzSize="small"
+    style="vertical-align: middle"
+  ></nz-avatar>
+  <p class="username fl">{{ prefix }}{{ data.name }}</p>
+</ng-container>
